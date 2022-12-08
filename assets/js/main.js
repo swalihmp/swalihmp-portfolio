@@ -154,18 +154,4 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 // Contact form submission
-$("#submit-form").submit((e) => {
-  e.preventDefault();
-  $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbxFm73mU4vhRMqWF53S9jIlY5gCqNjWOw6bch_0_g/exec",
-    data: $("#submit-form").serialize(),
-    method: "post",
-    success: function (response) {
-      alert("Form submitted successfully");
-      window.location.reload();
-    },
-    error: function (err) {
-      alert("Something Error");
-    },
-  });
-});
+
